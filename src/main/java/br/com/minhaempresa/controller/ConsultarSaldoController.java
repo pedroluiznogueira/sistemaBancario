@@ -18,12 +18,17 @@ public class ConsultarSaldoController extends HttpServlet {
     // usando doGet pois precisamos vai ser "pegado" algo do servidor e não trazido algo para o servidor
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // req é o parâmetro vindo da requisição quando o doGet for requisitado
+        String nome = req.getParameter("nome");
+        String sobrenome = req.getParameter("sobrenome");
+
         // preciso de uma instância de cliente para passar como parâmetro para conta
-        Cliente cliente = new Cliente();
+        Cliente cliente = new Cliente(nome, sobrenome);
 
         // preciso de uma instância de conta, fazendo do tipo mais generalista
-        Conta contacorrente = new ContaCorrente();
+        Conta contacorrente = new ContaCorrente(cliente);
 
+        // rep será a resposta que meu servlet vai dar
         resp.getWriter().println("servlet funcionando");
     }
 }
