@@ -32,3 +32,13 @@
 0:0:0:0:0:0:0:1 - - [07/Oct/2021:13:49:52 -0300] "GET /sistema-financeiro-web/consultar-saldo?nome=Fulano&sobrenome=de%Tal HTTP/1.1" 200 5 http-bio-8080-exec-1 80333
 0:0:0:0:0:0:0:1 - - [07/Oct/2021:13:55:18 -0300] "GET /sistema-financeiro-web/consultar-saldo?nome=Fulano&sobrenome=de+Tal HTTP/1.1" 200 5 http-bio-8080-exec-1 315130
 0:0:0:0:0:0:0:1 - - [07/Oct/2021:13:55:33 -0300] "GET /sistema-financeiro-web/consultar-saldo?nome=Fulano&sobrenome=de+Tal HTTP/1.1" 200 5 http-bio-8080-exec-1 48
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:04:24 -0300] "GET /sistema-financeiro-web/depositar HTTP/1.1" 200 31 http-bio-8080-exec-1 32
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:08:45 -0300] "GET /sistema-financeiro-web/depositar?nome=pedro&sobrenome=luiz HTTP/1.1" 200 8 http-bio-8080-exec-1 25
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:15:13 -0300] "GET /sistema-financeiro-web/depositar?nome=pedro&sobrenome=luiz HTTP/1.1" 200 8 http-bio-8080-exec-1 35
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:24:45 -0300] "GET /sistema-financeiro-web/depositar?nome=pedro&sobrenome=luiz&valor=2000 HTTP/1.1" 405 1065 http-bio-8080-exec-1 40
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:27:36 -0300] "POST /sistema-financeiro-web/depositar HTTP/1.1" 200 - http-bio-8080-exec-1 66250
+127.0.0.1 - - [07/Oct/2021:14:27:50 -0300] "POST /sistema-financeiro-web/depositar HTTP/1.1" 200 - http-bio-8080-exec-1 42
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:31:15 -0300] "POST /sistema-financeiro-web/depositar HTTP/1.1" 200 - http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:31:17 -0300] "POST /sistema-financeiro-web/depositar HTTP/1.1" 200 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:31:23 -0300] "POST /sistema-financeiro-web/depositar HTTP/1.1" 200 - http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:14:31:29 -0300] "POST /sistema-financeiro-web/depositar HTTP/1.1" 200 - http-bio-8080-exec-9 1
