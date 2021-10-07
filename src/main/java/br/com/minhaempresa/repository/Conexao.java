@@ -11,7 +11,7 @@ public class Conexao {
 
     public static EntityManager getConexao() {
         // se eu não tiver criado a conexão com o banco ainda
-        if (entityManagerFactory == null) {
+        if (entityManagerFactory == null || !entityManagerFactory.isOpen()) {
             entityManagerFactory = Persistence.createEntityManagerFactory("sistema-financeiro");
         }
 
