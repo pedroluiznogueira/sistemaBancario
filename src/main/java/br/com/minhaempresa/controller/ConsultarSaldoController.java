@@ -22,12 +22,12 @@ public class ConsultarSaldoController extends HttpServlet {
         String nome = req.getParameter("nome");
         String sobrenome = req.getParameter("sobrenome");
 
-        // preciso de uma instância de cliente para passar como parâmetro para conta
+        /// aqui está sendo feita a lógica de consultar um saldo
         Cliente cliente = new Cliente(nome, sobrenome);
-        // preciso de uma instância de conta, fazendo do tipo mais generalista
         Conta conta = new ContaCorrente(cliente);
+        double saldo = conta.consultarSaldo();
 
         // rep será a resposta que meu servlet vai dar
-        resp.getWriter().println(conta.consultarSaldo());
+        resp.getWriter().println(saldo);
     }
 }
