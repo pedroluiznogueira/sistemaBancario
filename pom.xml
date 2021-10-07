@@ -57,6 +57,12 @@
       <version>5.4.12.Final</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core-jakarta</artifactId>
+      <version>5.5.7.Final</version>
+    </dependency>
+
   </dependencies>
 
   <build>
