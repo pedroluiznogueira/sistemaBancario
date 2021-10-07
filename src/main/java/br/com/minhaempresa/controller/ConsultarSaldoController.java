@@ -24,11 +24,10 @@ public class ConsultarSaldoController extends HttpServlet {
 
         // preciso de uma instância de cliente para passar como parâmetro para conta
         Cliente cliente = new Cliente(nome, sobrenome);
-
         // preciso de uma instância de conta, fazendo do tipo mais generalista
-        Conta contacorrente = new ContaCorrente(cliente);
+        Conta conta = new ContaCorrente(cliente);
 
         // rep será a resposta que meu servlet vai dar
-        resp.getWriter().println("servlet funcionando");
+        resp.getWriter().println(conta.consultarSaldo());
     }
 }

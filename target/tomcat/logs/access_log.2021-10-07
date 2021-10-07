@@ -21,3 +21,4 @@
 0:0:0:0:0:0:0:1 - - [07/Oct/2021:12:31:40 -0300] "GET /sistema-financeiro-web HTTP/1.1" 302 - http-bio-8080-exec-1 0
 0:0:0:0:0:0:0:1 - - [07/Oct/2021:12:31:41 -0300] "GET /sistema-financeiro-web/ HTTP/1.1" 200 52 http-bio-8080-exec-3 517
 0:0:0:0:0:0:0:1 - - [07/Oct/2021:12:31:56 -0300] "GET /sistema-financeiro-web/consultar-saldo HTTP/1.1" 200 21 http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [07/Oct/2021:13:10:36 -0300] "GET /sistema-financeiro-web/consultar-saldo HTTP/1.1" 200 21 http-bio-8080-exec-8 34
