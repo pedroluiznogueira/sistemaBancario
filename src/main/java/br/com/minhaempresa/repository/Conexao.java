@@ -6,9 +6,20 @@ import javax.persistence.Persistence;
 
 public class Conexao {
 
-    // vai pegar um Factory e apartir dele retornar um Manager
-    public EntityManager getConexao() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistema-financeiro");
-        return emf.createEntityManager();
+    private static EntityManagerFactory entityManagerFactory = null;
+    private static EntityManager entityManager = null;
+
+    public static EntityManager getConexao() {
+        // se eu não tiver criado a conexão com o banco ainda
+        if (entityManagerFactory == null) {
+            entityManagerFactory = Persistence.createEntityManagerFactory("sistema-financeiro");
+        }
+
+        // se eu ainda assim não tiver criado o manager apartir do factory
+        if (entityManager ==  null) {
+            entityManager = entityManagerFactory.createEntityManager();
+        }
+
+        return entityManager;
     }
 }
