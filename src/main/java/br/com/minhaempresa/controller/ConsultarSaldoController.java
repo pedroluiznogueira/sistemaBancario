@@ -1,8 +1,5 @@
 package br.com.minhaempresa.controller;
 
-import br.com.minhaempresa.domain.Cliente;
-import br.com.minhaempresa.domain.Conta;
-import br.com.minhaempresa.domain.ContaCorrente;
 import br.com.minhaempresa.services.ConsultarSaldoService;
 
 import javax.servlet.ServletException;
