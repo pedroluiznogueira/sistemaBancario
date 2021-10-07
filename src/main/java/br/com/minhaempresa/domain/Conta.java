@@ -2,14 +2,13 @@ package br.com.minhaempresa.domain;
 
 import br.com.minhaempresa.exceptions.SaldoInsuficienteException;
 
-// modelo, não crio mais objeto diretos
 public abstract class Conta {
 
+    private int id;
     private String numero;
     private double saldo;
     private Cliente titular;
 
-    // construtor retorna objetos do tipo conta, não especifica retorno
     public Conta(Cliente titular) {
         this.saldo = 0;
         this.numero = "1";

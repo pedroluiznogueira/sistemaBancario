@@ -1,17 +1,31 @@
 package br.com.minhaempresa.domain;
 
-public class Cliente {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
 
-    private String identificador;
+@Entity
+public class Cliente implements Serializable {
+
+    // isso serve para fazermos o tráfego de informação em bytes entre tecnologias
+    private final static long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
+
     private String nome;
     private String sobrenome;
+
+    public Cliente() {
+    }
 
     public Cliente(String nome, String sobrenome) {
         this.nome  = nome;
         this.sobrenome = sobrenome;
     }
-
-    // ao falar de criação de objeto falamos de construtor
 
     public String getNome() {
 
@@ -37,12 +51,12 @@ public class Cliente {
         this.sobrenome = sobrenome;
     }
 
-    public String getIdentificador() {
-        return identificador;
+    public String getId() {
+        return id;
     }
 
-    public void setIdentificador(String identificador) {
-        this.identificador = identificador;
+    public void setId(String identificador) {
+        this.id = identificador;
     }
 
     @Override
