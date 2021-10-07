@@ -3,6 +3,7 @@ package br.com.minhaempresa.controller;
 import br.com.minhaempresa.domain.Cliente;
 import br.com.minhaempresa.domain.Conta;
 import br.com.minhaempresa.domain.ContaCorrente;
+import br.com.minhaempresa.services.ConsultarSaldoService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,10 +23,9 @@ public class ConsultarSaldoController extends HttpServlet {
         String nome = req.getParameter("nome");
         String sobrenome = req.getParameter("sobrenome");
 
-        /// aqui está sendo feita a lógica de consultar um saldo
-        Cliente cliente = new Cliente(nome, sobrenome);
-        Conta conta = new ContaCorrente(cliente);
-        double saldo = conta.consultarSaldo();
+        // consultando um saldo apartir da camada de serviço
+        ConsultarSaldoService consultarSaldoService = new ConsultarSaldoService();
+        double saldo = consultarSaldoService.consultarSaldo(nome, sobrenome);
 
         // rep será a resposta que meu servlet vai dar
         resp.getWriter().println(saldo);
