@@ -7,7 +7,7 @@
         <input type="text" name="sobrenome"/>
         <input type="text" name="valor"/>
 
-        <input type="submit" value="Depositar"/>
+        <input type="submit" value="depositar"/>
     </form>
 </body>
 </html>
