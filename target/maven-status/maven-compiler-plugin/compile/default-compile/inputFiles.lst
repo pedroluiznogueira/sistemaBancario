@@ -1,4 +1,14 @@
-C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\controller\ConsultarSaldoController.java
-C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\services\DepositarService.java
-C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\controller\DepositarController.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\domain\ContaConjunta.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\services\DepositoService.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\domain\ContaCorrente.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\domain\Cliente.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\domain\ContaPoupanca.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\exceptions\SaldoInsuficienteException.java
 C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\services\ConsultarSaldoService.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\controller\ConsultarSaldoController.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\domain\Conta.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\repository\ContaRepository.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\domain\ContaEspecial.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\repository\Conexao.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\controller\DepositoController.java
+C:\Users\pelui\IdeaProjects\SistemaFinanceiroWeb\src\main\java\br\com\minhaempresa\repository\ClienteRepository.java
