@@ -1,10 +1,12 @@
 package br.com.minhaempresa.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "tb_conta_conjunta")
 public class ContaConjunta extends Conta {
 //    private List<Cliente> outrosTitulares = new ArrayList<Cliente>();
 
