@@ -1,8 +1,10 @@
 package br.com.minhaempresa.domain;
 
+import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class ContaConjunta extends Conta {
     private List<Cliente> outrosTitulares = new ArrayList<Cliente>();
 
