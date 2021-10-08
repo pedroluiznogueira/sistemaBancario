@@ -16,15 +16,11 @@ public class ConsultarSaldoController extends HttpServlet {
     // usando doGet pois precisamos vai ser "pegado" algo do servidor e não trazido algo para o servidor
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // req é o parâmetro vindo da requisição quando o doGet for requisitado
-        String nome = req.getParameter("nome");
-        String sobrenome = req.getParameter("sobrenome");
+        Integer id = Integer.valueOf(req.getParameter("id"));
 
-        // consultando um saldo apartir da camada de serviço
         ConsultarSaldoService consultarSaldoService = new ConsultarSaldoService();
-        double saldo = consultarSaldoService.consultarSaldo(nome, sobrenome);
+        double saldo = consultarSaldoService.consultarSaldo(id);
 
-        // rep será a resposta que meu servlet vai dar
         resp.getWriter().println(saldo);
     }
 }
