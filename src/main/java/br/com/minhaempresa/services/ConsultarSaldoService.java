@@ -13,7 +13,6 @@ public class ConsultarSaldoService {
 
         Cliente cliente = clienteRepository.buscarCliente(id);
         Conta conta = new ContaCorrente(cliente);
-        conta.depositar(1000);
 
         return conta.consultarSaldo();
     }
