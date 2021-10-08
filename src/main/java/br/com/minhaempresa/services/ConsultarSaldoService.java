@@ -11,6 +11,7 @@ public class ConsultarSaldoService {
 
     public double consultarSaldo(int id) {
 
+        // -- ESTOU NA CAMADA SERVICE ACESSANDO A CAMADA REPOSITORY --
         Cliente cliente = clienteRepository.buscarCliente(id);
         Conta conta = new ContaCorrente(cliente);
 

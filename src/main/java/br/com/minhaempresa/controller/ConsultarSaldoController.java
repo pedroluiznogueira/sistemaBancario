@@ -18,6 +18,7 @@ public class ConsultarSaldoController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Integer id = Integer.valueOf(req.getParameter("id"));
 
+        // -- ESTOU NA CAMADA CONTROLLER ACESSANDO A CAMADA SERVICE --
         ConsultarSaldoService consultarSaldoService = new ConsultarSaldoService();
         double saldo = consultarSaldoService.consultarSaldo(id);
 
