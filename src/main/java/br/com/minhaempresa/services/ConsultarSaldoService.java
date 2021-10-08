@@ -4,7 +4,6 @@ import br.com.minhaempresa.domain.Cliente;
 import br.com.minhaempresa.domain.Conta;
 import br.com.minhaempresa.domain.ContaCorrente;
 import br.com.minhaempresa.repository.ClienteRepository;
-import br.com.minhaempresa.repository.ContaRepository;
 
 public class ConsultarSaldoService {
 
@@ -15,6 +14,6 @@ public class ConsultarSaldoService {
         Cliente cliente = clienteRepository.buscarCliente(id);
         Conta conta = new ContaCorrente(cliente);
 
-        return ;
+        return conta.consultarSaldo();
     }
 }

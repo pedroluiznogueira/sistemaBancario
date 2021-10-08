@@ -8,4 +8,8 @@ public class ClienteRepository {
 
     private EntityManager entityManager = Conexao.getConexao();
 
+    public Cliente buscarCliente(int id) {
+        // buscando o cliente com o find do entity manager
+        return this.entityManager.find(Cliente.class, id);
+    }
 }
