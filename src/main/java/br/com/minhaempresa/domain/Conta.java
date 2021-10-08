@@ -11,6 +11,8 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public abstract class Conta {
 
+    // estes são os atributos que as classes filhas mapeadas irão receber
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
