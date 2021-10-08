@@ -22,5 +22,6 @@ public class DepositoController extends HttpServlet {
 
         DepositoService depositarService = new DepositoService();
         depositarService.depositar(nome, sobrenome, Double.valueOf(valor));
+        resp.getWriter().println("Depósito realizado com sucesso!");
     }
 }
